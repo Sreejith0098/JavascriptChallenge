@@ -1,12 +1,11 @@
 //Reverse a String Without Using reverse() Method
-function reverseString() {
+const reverseString=()=>{
     let input = "hello"
-    let reversedString =""
+    let reversedString = ""
     intoArray = input.split('')
-    for(i=intoArray[0]; i<=intoArray.length-1; i++){
-        console.log(i)
+    for(let i=intoArray.length-1; i>=0; i--){
+        reversedString= reversedString + intoArray[i]
     }
-    
-    // console.log(reversedString)
+    console.log(reversedString)
 }
-reverseString()
+    reverseString()
